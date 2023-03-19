@@ -8,7 +8,6 @@ import {
   Avatar,
 } from "@pankod/refine-mui";
 
-// import { ColorModeContext } from "contexts";
 
 export const Header: React.FC = () => {
   // const { mode, setMode } = useContext(ColorModeContext);
@@ -27,13 +26,13 @@ export const Header: React.FC = () => {
           justifyContent="flex-end"
           alignItems="center"
         >
-          {/* <IconButton
+           {/* <IconButton
             onClick={() => {
               setMode();
             }}
           >
             {mode === "dark" ? <LightModeOutlined /> : <DarkModeOutlined />}
-          </IconButton> */}
+          </IconButton>  */}
           <Stack
             direction="row"
             gap="16px"

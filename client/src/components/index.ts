@@ -2,6 +2,7 @@
 import Profile from './common/Profile';
 import PropertyCard from './common/PropertyCard';
 import CustomButton from './common/CustomButton';
+import PropertyCardList from './common/PropertyCardList';
 
 // charts
 import PropertyReferrals from './charts/PropertyReferrals';
@@ -16,6 +17,7 @@ import AgentCard from './agent/AgentCard';
 import TopAgent from './home/TopAgent';
 
 export {
+  PropertyCardList,
   Profile,
   PropertyCard,
   CustomButton,

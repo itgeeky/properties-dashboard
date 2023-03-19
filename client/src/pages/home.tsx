@@ -13,7 +13,7 @@ const Home = () => {
         resource: "properties",
         config: {
             pagination: {
-                pageSize: 4,
+                pageSize: 3,
             },
         },
     });
@@ -34,25 +34,25 @@ const Home = () => {
                     title="Properties for Sale"
                     value={684}
                     series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
+                    colors={["#475BE8", "#E4E8EF"]}
                 />
                 <PieChart
                     title="Properties for Rent"
                     value={550}
                     series={[60, 40]}
-                    colors={["#275be8", "#c4e8ef"]}
+                    colors={["#FD8539", "#E4E8EF"]}
                 />
                 <PieChart
                     title="Total customers"
                     value={5684}
                     series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
+                    colors={["#2ED480" , "#E4E8EF"]}
                 />
                 <PieChart
                     title="Properties for Cities"
                     value={555}
-                    series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
+                    series={[25, 75]}
+                    colors={["#FFA2C0", "#E4E8EF"]}
                 />
             </Box>
 
@@ -82,7 +82,7 @@ const Home = () => {
 
                 <Box
                     mt={2.5}
-                    sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}
+                    sx={{ display: "flex", flexWrap: "wrap", gap: 2, justifyContent: 'space-around'}}
                 >
                     {latestProperties.map((property) => (
                         <PropertyCard
