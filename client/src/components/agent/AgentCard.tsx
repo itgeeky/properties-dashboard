@@ -94,7 +94,7 @@ const AgentCard = ({
                 >
                     <InfoBar
                         icon={<EmailOutlined sx={{ color: "#808191" }} />}
-                        name={email}
+                        name={email || 'nulo'}
                     />
                     <InfoBar
                         icon={<Place sx={{ color: "#808191" }} />}

@@ -1,29 +1,30 @@
-import { useList } from "@pankod/refine-core";
-import { Box, Typography } from "@pankod/refine-mui";
-import { AgentCard } from "components";
+import { useList } from '@pankod/refine-core';
+import { Box, Typography } from '@mui/material';
+
+import { AgentCard } from 'components';
 
 const Agents = () => {
-  const { data, isLoading, isError } = useList({
-    resource: "users",
-  });
+  const { data, isLoading, isError } = useList({ resource: 'users' });
 
   const allAgents = data?.data ?? [];
 
-  if (isLoading) return <Typography> Loading...</Typography>;
-  if (isError) return <Typography> Error ... </Typography>;
+  if (isLoading) return <div>loading...</div>;
+  if (isError) return <div>error...</div>;
+
   return (
     <Box>
       <Typography fontSize={25} fontWeight={700} color="#11142d">
-        Agent List
+        Agents List
       </Typography>
+
       <Box
         mt="20px"
         sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "20px",
-          backgroundColor: "#fcfcfc",
-          borderRadius: "15px"
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '20px',
+          backgroundColor: '#fcfcfc',
+          borderRadius: '15px'
         }}
       >
         {allAgents.map((agent) => (
